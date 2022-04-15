@@ -269,10 +269,13 @@ nav {
 
 
 .img-1{
-    margin-right: 11vw;
+    margin-left: 11vw;
     height: 527px;
     margin-top: 3vw;
     border-radius: 130px;
+}
+.text{
+
 }
 
 /* .about {
@@ -333,9 +336,21 @@ nav {
 }
 .img-2{
   margin-right: 11vw;
-  height: 527px;
-  margin-top: 3vw;
-  border-radius: 130px;
+  height: 25rem;
+  
+  margin-top: 45vh;
+  border-radius: 2px;
+}
+@media screen and (max-width: 1082px){
+  .img-2{
+    height: 20rem;
+    margin-top: 60vh;
+  }
+}
+@media screen and (max-width: 1000px){
+  .img-2{
+    display: block;
+  }
 }
 .skills {
   margin: 1.5rem 0 2.5rem 0;
@@ -396,9 +411,8 @@ nav {
     display: block;
   }
   .img-2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  
+    display: none;
   }
 }
 /* .works { 
@@ -523,6 +537,15 @@ box-shadow: 0 0 5px #03e9f4,
 .hed {
   margin-bottom: 8%;
 }
+@media screen and (max-width: 573px){
+  .img-name{
+    
+  }
+  .img-name:hover{
+    box-shadow: none;
+    transform: none;
+  }
+}
 
 
 /*------------------------------
@@ -530,6 +553,8 @@ box-shadow: 0 0 5px #03e9f4,
 ------------------------------*/
 .contact{
   margin-top: 4.5rem;
+  margin-left: 20vw;
+  margin-right: 20vw;
 }
 .contact-section {
   background-color: #222;
@@ -541,9 +566,7 @@ box-shadow: 0 0 5px #03e9f4,
   background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596), 0 6px 20px 0 rgba(0, 0, 0, 0.63);
   /* box-shadow: 1px 15px 35px #000; */
-  position: relative;
-  margin: auto;
-  width: 60vw;
+
 }
 .contact-container:hover {
   box-shadow: 1px 15px 35px #000;
@@ -556,21 +579,20 @@ box-shadow: 0 0 5px #03e9f4,
 }
 .contact-info{
   display: flex;
-  margin: 30px;
+  margin: 3px;
   justify-content: center;
 
 }
 .social-media {
   margin-top: 2vh;
-  display: flex;
+  display: grid;
   margin-bottom: 5vw;
-  position: relative;
   font-size: 5vw;
-
+  grid-template-columns: repeat( 5, 1fr );
+  grid-column-gap: 30%;
+  justify-content: center;
 }
 .social-media i{
-  width: 10vw;
-  padding: 30px;
   color: rgb(73, 166, 233);
   transition: all 0.3s linear;
 }
@@ -579,4 +601,16 @@ box-shadow: 0 0 5px #03e9f4,
    color: rgb(31, 81, 255)
 }
 
-
+@media screen and (max-width: 573px){
+  .contact{
+    margin-top: 4.5rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .contact-container{
+    box-shadow: none;
+  }
+  .contact-container:hover {
+    box-shadow: none;
+  }
+}
