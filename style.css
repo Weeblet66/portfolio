@@ -410,22 +410,22 @@ nav {
   width: 90%;
 }
 #css {
-  width: 70%;
-}
-#javascript {
   width: 80%;
 }
-#react {
+#javascript {
   width: 60%;
+}
+#react {
+  width: 40%;
 }
 #wordpress {
   width: 70%;
 }
 #tailwind {
-  width: 50%
+  width: 90%
 }
 #bootstrap {
-  width: 80%
+  width: 90%
 }
 @media screen and (max-width: 800px){
   .about-content .container{
